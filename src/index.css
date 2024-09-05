@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+body{
+  background-image: url("/public/bg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container{
+  width: 90vw;
+   height: 90vh;
+ background-color: rgba(17, 25, 40,0.75);
+ border-radius: 12px;
+ backdrop-filter: blur(19px) ;
+ border:  1px solid rgba(255, 255, 255,0.125) ;
+ display: flex;
+}
+
+/* For Webkit browsers (like Chrome, Safari, and Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: navy; /* Navy blue color */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 3px solid transparent; /* Optional: Add some space around thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: navy transparent; /* Thumb color and track color */
+}
